@@ -1,5 +1,5 @@
 FROM golang:1.17-alpine as builder
-WORKDIR /app/main.go
+WORKDIR /app
 ADD . /app
 RUN cd /app && go build -o hello
 
